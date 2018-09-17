@@ -15,6 +15,7 @@
   - ```shell
     git clone https://github.com/cryptape/appchain-truffle-box.git
     cd appchain-truffle-box/
+    rm -rf .git
     ```
 
 - 
