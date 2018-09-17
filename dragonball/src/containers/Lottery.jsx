@@ -20,12 +20,10 @@ export default class Lottery extends React.Component {
       .then((current) => {
         const tx = {
           ...transaction,
-          from: window.neuron.getAccount(),
           value: (1 * amount).toString(16),
           validUntilBlock: +current + 88,
-          privateKey: window.neuron.getPrivateKey(),
         }
-        return dragonBallContract.methods.imFeelingLucky(referral).send(tx)
+        return dragonBallContract.methods.imFeelingLucky(transaction.from).send(tx)
       })
       .then((res) => {
         log(res)

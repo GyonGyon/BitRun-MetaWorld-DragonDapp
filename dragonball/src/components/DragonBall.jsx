@@ -13,7 +13,6 @@ import { GridGenerator, HexGrid, Layout, Path, Hexagon, Text, Pattern, Hex } fro
 // import './dragonBall.css'
 import 'antd/dist/antd.css'
 import { transaction, dragonBallContract } from '../contracts/dragonball'
-import nervos from '../config/nervos'
 
 const Ball = (props) => {
   const { amount, ball } = props
@@ -39,7 +38,7 @@ export default class DragonBall extends React.Component {
   }
   componentDidMount() {
     dragonBallContract.methods
-      .playerId(window.neuron.getAccount())
+      .playerId(transaction.from)
       .call()
       .then((id) => {
         for (let i = 0; i < 7; i++) {

@@ -35,8 +35,6 @@ export default class Home extends Component {
     nervos.appchain.getBlockNumber().then((current) => {
       const tx = {
         ...transaction,
-        from: window.neuron.getAccount(),
-        privateKey: window.neuron.getPrivateKey(),
         validUntilBlock: +current + 88,
       }
       return dragonBallContract.methods

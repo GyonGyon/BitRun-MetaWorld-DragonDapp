@@ -1,10 +1,8 @@
-const nervos = require('../config/nervos')
-const { abi, address } = require('./dragonballCompiled')
-
-const transaction = require('../config/transaction')
+import { abi, address } from './dragonballCompiled';
+import nervos, { transaction } from '../config/nervos'
 const dragonBallContract = new nervos.appchain.Contract(abi, address)
-
-module.exports = {
+console.log(dragonBallContract)
+export {
   transaction,
   dragonBallContract,
 }
