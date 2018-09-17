@@ -1,0 +1,58 @@
+/*.bottomnav__bar--container {*/
+  /*position: fixed;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*width: 100vw;*/
+  /*background: #F6F5F5;*/
+  /*!*opacity: 0;*!*/
+/*}*/
+img {
+  width: 48px;
+  height: 48px;
+}
+
+.bottomnav__navs--container {
+  height: 49px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.15);*/
+  font-size: 30px;
+  /*opacity: 0;*/
+}
+
+/*.bottomnav__bar--container .active {*/
+  /*color: #fe792b;*/
+  /**/
+/*}*/
+
+/*.bottomnav__button--add {*/
+  /*position: absolute;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%, -30%);*/
+  /*color: #fe792b;*/
+  /*font-size: 50px;*/
+  /*width: 49px;*/
+  /*height: 49px;*/
+  /*!*border-radius: 50%;*!*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*background: #F6F5F5;*/
+  /*box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.15);*/
+/*}*/
+
+/*.bottomnav__button--add a {*/
+  /*filter: drop-shadow(0 0 1px currentColor);*/
+/*}*/
+
+/*.bottomnav__button--add::before {*/
+  /*display: block;*/
+  /*content: '';*/
+  /*background: #1E1E21;*/
+  /*width: 49px;*/
+  /*height: 49px;*/
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*z-index: -1;*/
+/*}*/
